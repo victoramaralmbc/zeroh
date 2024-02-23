@@ -1,0 +1,72 @@
+:root{
+  --primary-mbc-500: #FF6D6D;
+  --primary-mbc-600: #FF4D4D;
+  --primary-mbc-800: #D94141;
+  --surface-100:  #FFFFFF;
+  --body-font: 16px;
+  --caption-font: 14px;
+  --overline-font: 12px;
+  --icon-size-sm:8px;
+  --icon-size-md:16px;
+  --icon-sie-lg:24px;
+  }
+
+/** ignorar **/
+.buttons{
+  display:flex;
+  gap:24px;
+}
+
+
+.btn{
+  font-family:'Inter';
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:8px
+}
+
+/** Botão primário **/
+.primary-button{
+  background:var(--primary-mbc-600);
+  color:var(--surface-100);
+  border:0;
+}
+.primary-button:hover{
+  background:var(--primary-mbc-800);
+  transition:0.4s all;
+}
+.primary-button:active{
+  background:var(--primary-mbc-500);
+  transition:0.4s all;
+}
+
+/** Botão Pequeno **/
+
+.small-button{
+  padding:8px 16px;
+  height:24px;
+  border-radius:100px;
+  font-size:var(--overline-font);
+  font-weight:bold;
+}
+
+/** Botão Médio **/
+
+.medium-button{
+  padding:8px 24px;
+  height:40px;
+  border-radius:100px;
+  font-size:var(--caption-font);
+  font-weight:bold;
+}
+
+/** Botão Médio **/
+
+.large-button{
+  padding:4px 24px;
+  height:56px;
+  border-radius:100px;
+  font-size:var(--body-font);
+  font-weight:bold;
+}
